@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная | IT Школа</title>
+  <style>
+    a {
+      color: #8e44ad;
+      text-decoration: none !important;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #eee;
+      color: #333;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #8e44ad;
+      color: #fff;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 15px 30px;
+      z-index: 1000;
+      animation: fadeInDown 0.8s ease-out;
+    }
+
+    .navbar h2 {
+      margin: 0;
+    }
+
+    .navbar .nav-buttons button {
+      background: #fff;
+      color: #8e44ad;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 15px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .navbar .nav-buttons button:hover {
+      background: #ddd;
+    }
+
+    header {
+      background-color: #8e44ad;
+      color: #fff;
+      padding: 120px 20px 40px;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      animation: bounce 1.2s ease-in-out;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #fff;
+      animation: fadeIn 2s ease;
+    }
+
+    .intro p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+      background-color: #eee;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h3 {
+      color: #8e44ad;
+    }
+
+    .extra-block {
+      padding: 60px 20px;
+      background-color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      animation: fadeIn 2s ease;
+    }
+
+    .extra-block img {
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .extra-block .text {
+      max-width: 500px;
+    }
+
+    .call-to-action {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #eee;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .call-to-action h2 {
+      margin-bottom: 20px;
+      color: #8e44ad;
+    }
+
+    .call-to-action button {
+      background: #8e44ad;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .call-to-action button:hover {
+      background: #732d91;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #8e44ad;
+      color: #fff;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <h2>IT Школа</h2>
+    <div class="nav-buttons">
+      <button>Записаться</button>
+      <button><a href="desgin/home.html">Личный кабинет</a></button>
+    </div>
+  </div>
+
+  <header>
+    <h1>Добро пожаловать в IT Школу</h1>
+    <p>Будущее начинается здесь</p>
+  </header>
+
+  <section class="intro">
+    <h2>Мы обучаем современным IT-навыкам</h2>
+    <p>Наша школа предлагает курсы по программированию, веб-разработке, дизайну, кибербезопасности и многому другому. Обучение построено на практике и индивидуальном подходе к каждому ученику.</p>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <h3>Курсы для всех уровней</h3>
+      <p>От новичков до профессионалов — найдется курс для каждого.</p>
+    </div>
+    <div class="card">
+      <h3>Опытные преподаватели</h3>
+      <p>Наши менторы — это эксперты, работающие в IT-индустрии.</p>
+    </div>
+    <div class="card">
+      <h3>Проекты и портфолио</h3>
+      <p>Создавайте реальные проекты и пополняйте портфолио уже во время обучения.</p>
+    </div>
+  </section>
+
+  <section class="extra-block">
+    <img src="https://via.placeholder.com/400x300.png?text=IT+School" alt="IT Школа">
+    <div class="text">
+      <h2>Современные технологии</h2>
+      <p>Мы обучаем с использованием новейших технологий и инструментов, которые применяются в ведущих IT-компаниях. Вы получите не только теоретические знания, но и практический опыт работы в команде.</p>
+    </div>
+  </section>
+
+  <section class="call-to-action">
+    <h2>Присоединяйся к нам сегодня</h2>
+    <button>Оставить заявку</button>
+  </section>
+
+  <footer>
+    &copy; 2025 IT Школа. Все права защищены.
+  </footer>
+</body>
+</html>

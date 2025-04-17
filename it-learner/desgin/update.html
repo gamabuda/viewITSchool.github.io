@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Личный кабинет: редактирование</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+   <header class="header">
+   
+      <section class="flex">
+   
+         <a href="home.html" class="logo">Личный кабинет</a>
+   
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-home"></div>
+            <div class="fa-solid fa-arrow-right-from-bracket"></div>
+         </div>
+   
+         <div class="profile">
+            <img src="images/pic-1.jpg" class="image" alt="">
+            <h3 class="name">Иван Иванов</h3>
+            <p class="role">ученик</p>
+            <a href="profile.html" class="btn">аккаунт</a>
+            <div class="flex-btn">
+               <a href="login.html" class="option-btn">login</a>
+               <a href="register.html" class="option-btn">register</a>
+            </div>
+         </div>
+   
+      </section>
+   
+   </header>   
+
+   <div class="side-bar">
+
+      <div id="close-btn">
+         <i class="fas fa-times"></i>
+      </div>
+   
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Иван Иванов</h3>
+         <p class="role">ученик</p>
+         <!-- <a href="profile.html" class="btn">аккаунт</a> -->
+      </div>
+   
+      <nav class="navbar">
+         <a href="home.html"><i class="fas fa-regular fa-address-card"></i><span>Главная</span></a>
+         <a href="news.html"><i class="fas fa-solid fa-radio"></i><span>Новости</span></a>
+         <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Курсы</span></a>
+         <a href="contact.html"><i class="fas fa-headset"></i><span>Тех.поддержка</span></a>
+      </nav>
+   
+   </div>
+
+<section class="form-container">
+
+   <form action="" method="post" enctype="multipart/form-data">
+      <h3>Редактировать Профиль</h3>
+      <p>ФИО</p>
+      <input type="text" name="name" placeholder="ФИО" maxlength="50" class="box">
+      <p>Электронная почта</p>
+      <input type="email" name="email" placeholder="пример@gmail.com" maxlength="50" class="box">
+      <p>Текущий пароль</p>
+      <input type="password" name="old_pass" placeholder="введите ваш текущий пароль" maxlength="20" class="box">
+      <p>Новый пароль</p>
+      <input type="password" name="new_pass" placeholder="введите ваш новый пароль" maxlength="20" class="box">
+      <p>Подтвердить новый пароль</p>
+      <input type="password" name="c_pass" placeholder="подтвердите ваш новый пароль" maxlength="20" class="box">
+      <p>Загрузить изображение</p>
+      <input type="file" accept="image/*" class="box">
+      <input type="submit" value="Сохранить" name="submit" class="btn">
+   </form>
+
+</section>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+   
+</body>
+</html>
